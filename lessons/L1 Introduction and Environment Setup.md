@@ -39,65 +39,62 @@ A virtual environment is a self-contained directory that contains a Python insta
 **Using `virtualenv`**:
 
 1. Install `virtualenv`:
-    
-    ```bash
-    pip install virtualenv
-    ```
-    
+
+   ```bash
+   pip install virtualenv
+   ```
+
 2. Create a virtual environment:
-    
-    ```bash
-    virtualenv myenv
-    ```
-    
+
+   ```bash
+   virtualenv myenv
+   ```
+
 3. Activate the virtual environment:
-    - **macOS/Linux**:
-        
-        ```bash
-        source myenv/bin/activate
-        ```
-        
+   - **macOS/Linux**:
+     ```bash
+     source myenv/bin/activate
+     ```
 
 **Using `virtualenvwrapper`**:
 
 1. Install `virtualenvwrapper`:
-    
-    ```bash
-    pip install virtualenvwrapper
-    ```
-    
+
+   ```bash
+   pip install virtualenvwrapper
+   ```
+
 2. Add the following lines to your shell startup file (`~/.bashrc` or `~/.zshrc`):
-    
-    ```bash
-    export WORKON_HOME=$HOME/.virtualenvs
-    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-    source /usr/local/bin/virtualenvwrapper.sh
-    ```
-    
+
+   ```bash
+   export WORKON_HOME=$HOME/.virtualenvs
+   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+   source /usr/local/bin/virtualenvwrapper.sh
+   ```
+
 3. Source the shell startup file:
-    
-    ```bash
-    source ~/.bashrc  # or source ~/.zshrc
-    ```
-    
+
+   ```bash
+   source ~/.bashrc  # or source ~/.zshrc
+   ```
+
 4. Create a new environment:
-    
-    ```bash
-    mkvirtualenv myproject
-    ```
-    
+
+   ```bash
+   mkvirtualenv myproject
+   ```
+
 5. Activate the environment:
-    
-    ```bash
-    workon myproject
-    ```
-    
+
+   ```bash
+   workon myproject
+   ```
+
 6. Deactivate the environment:
-    
-    ```bash
-    deactivate
-    ```
-    
+
+   ```bash
+   deactivate
+   ```
 
 ### 1.2 PIP and Package Management
 
@@ -107,29 +104,21 @@ PIP is a package management system used to install and manage software packages 
 **Basic PIP Commands**:
 
 - Install a package:
-    
-    ```bash
-    pip install package_name
-    ```
-    
+  ```bash
+  pip install package_name
+  ```
 - Uninstall a package:
-    
-    ```bash
-    pip uninstall package_name
-    ```
-    
+  ```bash
+  pip uninstall package_name
+  ```
 - List installed packages:
-    
-    ```bash
-    pip list
-    ```
-    
+  ```bash
+  pip list
+  ```
 - Freeze installed packages:
-    
-    ```bash
-    pip freeze > requirements.txt
-    ```
-    
+  ```bash
+  pip freeze > requirements.txt
+  ```
 
 ### 1.3 Installing Necessary Packages
 

@@ -26,7 +26,6 @@ print(type(y))  # Output: <class 'float'>
 Strings are sequences of characters enclosed in quotes. They can be single, double, or triple quotes.
 
 ```python
-
 name = 'Python'
 name = "Python"
 description = '''Python is a programming language that lets you work quickly
@@ -128,7 +127,6 @@ Python uses `if`, `elif`, and `else` statements to perform conditional operation
 **Example:**
 
 ```python
-pythonCopy code
 x = 10
 if x > 0:
     print("x is positive")
@@ -143,7 +141,6 @@ else:
 You can write simple if statements on one line with shorthand if.
 
 ```python
-pythonCopy code
 x = 10
 print("x is positive") if x > 0 else print("x is not positive")
 
@@ -153,7 +150,6 @@ print("x is positive") if x > 0 else print("x is not positive")
 These logical operators are used to combine multiple conditions.
 
 ```python
-pythonCopy code
 x = 5
 y = 10
 
@@ -327,7 +323,6 @@ Modules are Python files that contain functions, classes, and variables. You can
 To import a module, use the `import` statement followed by the module name.
 
 ```python
-pythonCopy code
 import math
 print(math.sqrt(16))  # Output: 4.0
 
@@ -337,7 +332,6 @@ print(math.sqrt(16))  # Output: 4.0
 You can import specific functions from a module using the `from` keyword.
 
 ```python
-pythonCopy code
 from math import sqrt, pi
 print(sqrt(25))  # Output: 5.0
 print(pi)  # Output: 3.141592653589793
@@ -348,7 +342,6 @@ print(pi)  # Output: 3.141592653589793
 You can give a module a different name using the `as` keyword.
 
 ```python
-pythonCopy code
 import math as m
 print(m.sqrt(36))  # Output: 6.0
 
@@ -366,9 +359,9 @@ Packages are directories containing multiple modules. Each package must include 
 
 ```markdown
 mypackage/
-    __init__.py
-    greetings.py
-    farewells.py
+**init**.py
+greetings.py
+farewells.py
 ```
 
 **greetings.py**:
@@ -426,7 +419,6 @@ A class is defined using the `class` keyword followed by the class name and a co
 **Example:**
 
 ```python
-pythonCopy code
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -450,7 +442,6 @@ Inheritance allows a class to inherit attributes and methods from another class.
 **Base Class:**
 
 ```python
-pythonCopy code
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -463,7 +454,6 @@ class Animal:
 **Derived Class:**
 
 ```python
-pythonCopy code
 class Cat(Animal):
     def speak(self):
         return f"{self.name} says Meow"
@@ -483,7 +473,6 @@ Polymorphism allows different classes to be treated as instances of the same cla
 **Polymorphism Example:**
 
 ```python
-pythonCopy code
 class Bird(Animal):
     def speak(self):
         return f"{self.name} says Tweet"
@@ -498,7 +487,6 @@ for animal in animals:
 Encapsulation is achieved by prefixing an attribute with an underscore or double underscore. This makes it private to the class and not accessible from outside.
 
 ```python
-pythonCopy code
 class BankAccount:
     def __init__(self, balance):
         self.__balance = balance
@@ -530,7 +518,6 @@ Mixins are a kind of inheritance in which a class can inherit behaviors and attr
 **Example of Mixins:**
 
 ```python
-pythonCopy code
 class CanFly:
     def fly(self):
         return "Flying"
@@ -562,7 +549,6 @@ Special methods in Python are defined with double underscores at the beginning a
 **Example:**
 
 ```python
-pythonCopy code
 class Book:
     def __init__(self, title, author):
         self.title = title
