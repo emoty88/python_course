@@ -1,0 +1,284 @@
+[
+  {
+    "model": "myapp.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "bio": "John Doe's biography"
+    }
+  },
+  {
+    "model": "myapp.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Jane",
+      "last_name": "Austen",
+      "birth_date": "1775-12-16",
+      "biography": "Jane Austen was an English novelist known primarily for her six major novels...",
+      "metadata": {
+        "nationality": "British",
+        "notable_works": ["Pride and Prejudice", "Sense and Sensibility"]
+      }
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Fiction"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Romance"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Science Fiction"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Fantasy"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Mystery"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 6,
+    "fields": {
+      "name": "Thriller"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Non-Fiction"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Historical"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 9,
+    "fields": {
+      "name": "Biography"
+    }
+  },
+  {
+    "model": "myapp.genre",
+    "pk": 10,
+    "fields": {
+      "name": "Adventure"
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 1,
+    "fields": {
+      "title": "Pride and Prejudice",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 2,
+    "fields": {
+      "title": "Sense and Sensibility",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 3,
+    "fields": {
+      "title": "Emma",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 4,
+    "fields": {
+      "title": "Mansfield Park",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 5,
+    "fields": {
+      "title": "Northanger Abbey",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 6,
+    "fields": {
+      "title": "Persuasion",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 7,
+    "fields": {
+      "title": "Lady Susan",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 8,
+    "fields": {
+      "title": "The Watsons",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 9,
+    "fields": {
+      "title": "Sanditon",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.book",
+    "pk": 10,
+    "fields": {
+      "title": "Love and Freindship",
+      "author": 1,
+      "genres": [1, 2]
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 1,
+    "fields": {
+      "title": "The Life of Jane Austen",
+      "body": "Jane Austen was an English novelist known primarily for her six major novels...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 2,
+    "fields": {
+      "title": "Analysis of Pride and Prejudice",
+      "body": "Pride and Prejudice is a romantic novel of manners...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 3,
+    "fields": {
+      "title": "Themes in Sense and Sensibility",
+      "body": "Sense and Sensibility is a novel by Jane Austen...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 4,
+    "fields": {
+      "title": "Character Study: Emma",
+      "body": "Emma is a novel about youthful hubris and the perils of misconstrued romance...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 5,
+    "fields": {
+      "title": "Social Critique in Mansfield Park",
+      "body": "Mansfield Park is a novel by Jane Austen that challenges the reader...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 6,
+    "fields": {
+      "title": "Northanger Abbey and Gothic Fiction",
+      "body": "Northanger Abbey, written by Jane Austen, is a satire of Gothic novels...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 7,
+    "fields": {
+      "title": "Persuasion: A Mature Work",
+      "body": "Persuasion is Jane Austen's last completed novel and is often considered...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 8,
+    "fields": {
+      "title": "Lady Susan: An Epistolary Novel",
+      "body": "Lady Susan is a short epistolary novel by Jane Austen...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 9,
+    "fields": {
+      "title": "The Watsons: An Unfinished Work",
+      "body": "The Watsons is an unfinished novel by Jane Austen...",
+      "content": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "myapp.article",
+    "pk": 10,
+    "fields": {
+      "title": "Sanditon: Austen's Last Novel",
+      "body": "Sanditon is an unfinished novel by Jane Austen...",
+      "content": 1,
+      "is_published": true
+    }
+  }
+]
