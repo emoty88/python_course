@@ -2,6 +2,14 @@
 
 ### Relationships
 
+In Django, relationships between models are established through the use of fields that define how models are linked to each other. There are three primary types of relationships in Django:
+
+One-to-One (OneToOneField): This relationship is used when each instance of a model can be related to only one instance of another model, and vice versa.
+
+One-to-Many (ForeignKey): This relationship is established when each instance of a model can be related to multiple instances of another model, but those multiple instances can only relate to one instance of the first model.
+
+Many-to-Many (ManyToManyField): This relationship is used when multiple instances of a model can be related to multiple instances of another model.
+
 **One-to-One Relationships:**
 One-to-one relationships are used when each instance of a model can be associated with only one instance of another model. Use the `related_name` attribute to specify the name of the reverse relation from the related model back to this one.
 
@@ -10,7 +18,7 @@ One-to-one relationships are used when each instance of a model can be associate
 ```python
 # myapp/models.py
 from django.db import models
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import User
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
@@ -134,12 +142,12 @@ print(books.query)
 **Difference Between `select_related` and `prefetch_related`:**
 
 - **select_related**:
-    - Used for single-valued relationships (one-to-one or foreign key).
-    - Uses SQL joins to retrieve related objects in a single query.
-    - More efficient for retrieving single-valued relationships.
+  - Used for single-valued relationships (one-to-one or foreign key).
+  - Uses SQL joins to retrieve related objects in a single query.
+  - More efficient for retrieving single-valued relationships.
 - **prefetch_related**:
-    - Used for multi-valued relationships (many-to-many or reverse foreign key).
-    - Executes separate queries for each relationship and joins them in Python.
-    - More efficient for retrieving multi-valued relationships.
+  - Used for multi-valued relationships (many-to-many or reverse foreign key).
+  - Executes separate queries for each relationship and joins them in Python.
+  - More efficient for retrieving multi-valued relationships.
 
 For more detailed information on optimizing queries, refer to the [official Django documentation on select_related and prefetch_related](https://docs.djangoproject.com/en/stable/ref/models/querysets/#select-related).
